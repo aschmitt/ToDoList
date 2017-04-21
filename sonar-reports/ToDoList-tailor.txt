@@ -1,0 +1,50 @@
+Analyzing 5 files:
+.....
+
+[44;30m**********[m [42;30m/Users/aschmitt/Dev/iOS/ToDoList/ToDoList/AppDelegate.swift[m [44;30m**********[m
+/Users/aschmitt/Dev/iOS/ToDoList/ToDoList/AppDelegate.swift:[44;30m17:[m[44;30m101:[m [43;30mwarning:[m [max-line-length] Line is over maximum character limit (144/100)
+/Users/aschmitt/Dev/iOS/ToDoList/ToDoList/AppDelegate.swift:[44;30m23:[m[44;30m101:[m [43;30mwarning:[m [max-line-length] Line is over maximum character limit (285/100)
+/Users/aschmitt/Dev/iOS/ToDoList/ToDoList/AppDelegate.swift:[44;30m24:[m[44;30m101:[m [43;30mwarning:[m [max-line-length] Line is over maximum character limit (159/100)
+/Users/aschmitt/Dev/iOS/ToDoList/ToDoList/AppDelegate.swift:[44;30m28:[m[44;30m101:[m [43;30mwarning:[m [max-line-length] Line is over maximum character limit (218/100)
+/Users/aschmitt/Dev/iOS/ToDoList/ToDoList/AppDelegate.swift:[44;30m29:[m[44;30m101:[m [43;30mwarning:[m [max-line-length] Line is over maximum character limit (141/100)
+/Users/aschmitt/Dev/iOS/ToDoList/ToDoList/AppDelegate.swift:[44;30m33:[m[44;30m101:[m [43;30mwarning:[m [max-line-length] Line is over maximum character limit (155/100)
+/Users/aschmitt/Dev/iOS/ToDoList/ToDoList/AppDelegate.swift:[44;30m37:[m[44;30m101:[m [43;30mwarning:[m [max-line-length] Line is over maximum character limit (194/100)
+/Users/aschmitt/Dev/iOS/ToDoList/ToDoList/AppDelegate.swift:[44;30m41:[m[44;30m101:[m [43;30mwarning:[m [max-line-length] Line is over maximum character limit (128/100)
+/Users/aschmitt/Dev/iOS/ToDoList/ToDoList/AppDelegate.swift:[44;30m46:[m[44;30m    [m [43;30mwarning:[m [terminating-newline] File should terminate with exactly one newline character ('\n')
+
+[44;30m**********[m [42;30m/Users/aschmitt/Dev/iOS/ToDoList/ToDoList/FirstViewController.swift[m [44;30m**********[m
+/Users/aschmitt/Dev/iOS/ToDoList/ToDoList/FirstViewController.swift:[44;30m11:[m[44;30m021:[m [43;30mwarning:[m [comma-whitespace] Comma at column 21 should have no spaces before it
+/Users/aschmitt/Dev/iOS/ToDoList/ToDoList/FirstViewController.swift:[44;30m14:[m[44;30m004:[m [43;30mwarning:[m [trailing-whitespace] Line should not have any trailing whitespace
+/Users/aschmitt/Dev/iOS/ToDoList/ToDoList/FirstViewController.swift:[44;30m15:[m[44;30m004:[m [43;30mwarning:[m [trailing-whitespace] Line should not have any trailing whitespace
+/Users/aschmitt/Dev/iOS/ToDoList/ToDoList/FirstViewController.swift:[44;30m16:[m[44;30m004:[m [43;30mwarning:[m [trailing-whitespace] Line should not have any trailing whitespace
+/Users/aschmitt/Dev/iOS/ToDoList/ToDoList/FirstViewController.swift:[44;30m17:[m[44;30m084:[m [43;30mwarning:[m [min-name-length] Type name is less than minimum character limit (3/4)
+/Users/aschmitt/Dev/iOS/ToDoList/ToDoList/FirstViewController.swift:[44;30m17:[m[44;30m092:[m [43;30mwarning:[m [min-name-length] Type name is less than minimum character limit (3/4)
+/Users/aschmitt/Dev/iOS/ToDoList/ToDoList/FirstViewController.swift:[44;30m20:[m[44;30m004:[m [43;30mwarning:[m [trailing-whitespace] Line should not have any trailing whitespace
+/Users/aschmitt/Dev/iOS/ToDoList/ToDoList/FirstViewController.swift:[44;30m21:[m[44;30m101:[m [43;30mwarning:[m [max-line-length] Line is over maximum character limit (107/100)
+/Users/aschmitt/Dev/iOS/ToDoList/ToDoList/FirstViewController.swift:[44;30m26:[m[44;30m004:[m [43;30mwarning:[m [trailing-whitespace] Line should not have any trailing whitespace
+/Users/aschmitt/Dev/iOS/ToDoList/ToDoList/FirstViewController.swift:[44;30m27:[m[44;30m101:[m [43;30mwarning:[m [max-line-length] Line is over maximum character limit (134/100)
+/Users/aschmitt/Dev/iOS/ToDoList/ToDoList/FirstViewController.swift:[44;30m33:[m[44;30m004:[m [43;30mwarning:[m [trailing-whitespace] Line should not have any trailing whitespace
+/Users/aschmitt/Dev/iOS/ToDoList/ToDoList/FirstViewController.swift:[44;30m40:[m[44;30m004:[m [43;30mwarning:[m [trailing-whitespace] Line should not have any trailing whitespace
+/Users/aschmitt/Dev/iOS/ToDoList/ToDoList/FirstViewController.swift:[44;30m53:[m[44;30m    [m [43;30mwarning:[m [terminating-newline] File should terminate with exactly one newline character ('\n')
+
+[44;30m**********[m [42;30m/Users/aschmitt/Dev/iOS/ToDoList/ToDoList/SecondViewController.swift[m [44;30m**********[m
+/Users/aschmitt/Dev/iOS/ToDoList/ToDoList/SecondViewController.swift:[44;30m14:[m[44;30m004:[m [43;30mwarning:[m [trailing-whitespace] Line should not have any trailing whitespace
+/Users/aschmitt/Dev/iOS/ToDoList/ToDoList/SecondViewController.swift:[44;30m23:[m[44;30m101:[m [43;30mwarning:[m [max-line-length] Line is over maximum character limit (136/100)
+/Users/aschmitt/Dev/iOS/ToDoList/ToDoList/SecondViewController.swift:[44;30m24:[m[44;30m101:[m [43;30mwarning:[m [max-line-length] Line is over maximum character limit (115/100)
+/Users/aschmitt/Dev/iOS/ToDoList/ToDoList/SecondViewController.swift:[44;30m29:[m[44;30m004:[m [43;30mwarning:[m [trailing-whitespace] Line should not have any trailing whitespace
+/Users/aschmitt/Dev/iOS/ToDoList/ToDoList/SecondViewController.swift:[44;30m30:[m[44;30m004:[m [43;30mwarning:[m [trailing-whitespace] Line should not have any trailing whitespace
+/Users/aschmitt/Dev/iOS/ToDoList/ToDoList/SecondViewController.swift:[44;30m34:[m[44;30m035:[m [43;30mwarning:[m [terminating-semicolon] Statements should not terminate with a semicolon
+/Users/aschmitt/Dev/iOS/ToDoList/ToDoList/SecondViewController.swift:[44;30m35:[m[44;30m013:[m [43;30mwarning:[m [min-name-length] Constant name is less than minimum character limit (3/4)
+/Users/aschmitt/Dev/iOS/ToDoList/ToDoList/SecondViewController.swift:[44;30m35:[m[44;30m101:[m [43;30mwarning:[m [max-line-length] Line is over maximum character limit (135/100)
+/Users/aschmitt/Dev/iOS/ToDoList/ToDoList/SecondViewController.swift:[44;30m36:[m[44;30m043:[m [43;30mwarning:[m [brace-style] Function closing brace should be isolated on a separate line
+/Users/aschmitt/Dev/iOS/ToDoList/ToDoList/SecondViewController.swift:[44;30m37:[m[44;30m004:[m [43;30mwarning:[m [trailing-whitespace] Line should not have any trailing whitespace
+/Users/aschmitt/Dev/iOS/ToDoList/ToDoList/SecondViewController.swift:[44;30m50:[m[44;30m006:[m [43;30mwarning:[m [function-whitespace] Function should have at least one blank line after it
+/Users/aschmitt/Dev/iOS/ToDoList/ToDoList/SecondViewController.swift:[44;30m52:[m[44;30m    [m [43;30mwarning:[m [terminating-newline] File should terminate with exactly one newline character ('\n')
+
+[44;30m**********[m [42;30m/Users/aschmitt/Dev/iOS/ToDoList/ToDoList/ToDo.swift[m [44;30m**********[m
+/Users/aschmitt/Dev/iOS/ToDoList/ToDoList/ToDo.swift:[44;30m15:[m[44;30m4:[m [43;30mwarning:[m [trailing-whitespace] Line should not have any trailing whitespace
+/Users/aschmitt/Dev/iOS/ToDoList/ToDoList/ToDo.swift:[44;30m17:[m[44;30m4:[m [43;30mwarning:[m [trailing-whitespace] Line should not have any trailing whitespace
+/Users/aschmitt/Dev/iOS/ToDoList/ToDoList/ToDo.swift:[44;30m21:[m[44;30m6:[m [43;30mwarning:[m [function-whitespace] Function should have at least one blank line after it
+
+Analyzed 5 files, skipped 0 files, and detected 37 violations (0 errors, 37 warnings).
+
