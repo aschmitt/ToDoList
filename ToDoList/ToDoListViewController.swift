@@ -1,5 +1,5 @@
 //
-//  FirstViewController.swift
+//  ToDoListViewController.swift
 //  ToDoList
 //
 //  Created by Andreas Schmitt on 10.04.17.
@@ -10,7 +10,7 @@ import UIKit
 
 var list = ["Test1" , "test 2"]
 
-class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class ToDoListViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     
     
@@ -41,6 +41,7 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        self.myTableView.accessibilityLabel = "ToDoTable"
     }
 
     override func didReceiveMemoryWarning() {

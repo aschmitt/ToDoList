@@ -8,20 +8,21 @@
 
 import UIKit
 
-class SecondViewController: UIViewController, UITextFieldDelegate {
+class CreateToDoViewController: UIViewController, UITextFieldDelegate {
 
-    @IBOutlet weak var input: UITextField!
+    @IBOutlet weak var todoField: UITextField!
+    @IBOutlet weak var descriptionField: UITextField!
     
     @IBAction func addItem(_ sender: Any) {
-        if let toDoText = input.text {
-            if input.text != "" {
+        if let toDoText = todoField.text {
+            if todoField.text != "" {
                 list.append(toDoText)
-                input.text = ""
-                input.placeholder = "New ToDo please"
+                todoField.text = ""
+                todoField.placeholder = "New ToDo please"
                 tabBarController?.tabBar.items?[0].badgeValue = "\(list.count)"
             } else {
-                let alert = UIAlertController(title: "Hey", message: "This is  one Alert", preferredStyle: UIAlertControllerStyle.alert)
-                alert.addAction(UIAlertAction(title: "Working!!", style: UIAlertActionStyle.default, handler: nil))
+                let alert = UIAlertController(title: "Hey", message: "I need at least a ToDo...", preferredStyle: UIAlertControllerStyle.alert)
+                alert.addAction(UIAlertAction(title: "Ok!!", style: UIAlertActionStyle.default, handler: nil))
                 self.present(alert, animated: true, completion: nil)
             }
         }
@@ -31,10 +32,9 @@ class SecondViewController: UIViewController, UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        self.input.delegate = self;
-        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(SecondViewController.dismissKeyboard))
-        view.addGestureRecognizer(tap)
-    }
+        self.todoField.delegate = self;
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(CreateToDoViewController.dismissKeyboard))
+        view.addGestureRecognizer(tap)    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

@@ -29,8 +29,26 @@ class ToDoListUITests: XCTestCase {
     }
     
     func testExample() {
-        // Use recording to get started writing UI tests.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+        let app = XCUIApplication()
+        app.tabBars.buttons["Second"].tap()
+        let textField = app.textFields["todoTextField"]
+        textField.tap()
+        textField.typeText("My_First_ToDo")
+        textField.typeText("\n")
+        
+        XCTAssertEqual(textField.value as! String, "My_First_ToDo")
+        
+        let button = app.buttons["toDoSubmitButton"]
+        button.tap()
+        
+        XCTAssertEqual(textField.placeholderValue!, "New ToDo please")
+        
+        app.tabBars.buttons["First"].tap()
+        
+        let table = app.tables["ToDoTable"]
+        let cells = table.cells
+        XCTAssertEqual(cells.count, 3)
+        
     }
     
 }
