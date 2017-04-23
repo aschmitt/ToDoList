@@ -8,32 +8,44 @@
 
 import UIKit
 
-var list = ["Test1" , "test 2"]
+//var list = ["Test1" , "test 2"]
 
 class ToDoListViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
+    var dataStorage: ToDo!
     
+    init(storage: ToDo) {
+        dataStorage = storage
+        
+        super.init(nibName: nil, bundle: nil)
+    }
     
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+    }
+    
+
+
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return list.count
+        return dataStorage.toDoListArray.count
     }
     
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell(style: UITableViewCellStyle.default, reuseIdentifier: "cell")
-        cell.textLabel?.text = list[indexPath.row]
+        cell.textLabel?.text = dataStorage.toDoListArray[indexPath.row].name
         return cell
     }
     
     public func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == UITableViewCellEditingStyle.delete {
-            list.remove(at: indexPath.row)
+            dataStorage.toDoListArray.remove(at: indexPath.row)
             myTableView.reloadData()
         }
     }
     
     override func viewDidAppear(_ animated: Bool) {
         myTableView.reloadData()
-        tabBarController?.tabBar.items?[0].badgeValue = "\(list.count)"
+        tabBarController?.tabBar.items?[0].badgeValue = "\(dataStorage.count)"
     }
 
     @IBOutlet weak var myTableView: UITableView!

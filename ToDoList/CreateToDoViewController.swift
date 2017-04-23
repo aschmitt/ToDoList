@@ -13,13 +13,27 @@ class CreateToDoViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var todoField: UITextField!
     @IBOutlet weak var descriptionField: UITextField!
     
+    var dataStorage: ToDo!
+    
+    init(storage: ToDo) {
+        dataStorage = storage
+        
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+    }
+    
     @IBAction func addItem(_ sender: Any) {
         if let toDoText = todoField.text {
             if todoField.text != "" {
-                list.append(toDoText)
+                //ToDo: Fix forece unwrap
+                let item = ToDoItem(name: toDoText, description: descriptionField.text!)
+                dataStorage.toDoListArray.append(item)
                 todoField.text = ""
                 todoField.placeholder = "New ToDo please"
-                tabBarController?.tabBar.items?[0].badgeValue = "\(list.count)"
+                tabBarController?.tabBar.items?[0].badgeValue = "\(dataStorage.toDoListArray.count)"
             } else {
                 let alert = UIAlertController(title: "Hey", message: "I need at least a ToDo...", preferredStyle: UIAlertControllerStyle.alert)
                 alert.addAction(UIAlertAction(title: "Ok!!", style: UIAlertActionStyle.default, handler: nil))

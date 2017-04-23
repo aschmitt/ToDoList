@@ -19,4 +19,12 @@ class ToDo {
         self.toDoListArray.append(item)
         return true
     }
+    
+    func getList() -> [ToDoItem] {
+        return self.toDoListArray
+    }
+    
+    func count() -> Int {
+        return self.toDoListArray.count
+    }
 }
