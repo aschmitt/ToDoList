@@ -13,7 +13,7 @@ class CreateToDoViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var todoField: UITextField!
     @IBOutlet weak var descriptionField: UITextField!
     
-    var dataStorage: ToDo!
+    var dataStorage: ToDo?
     
     init(storage: ToDo) {
         dataStorage = storage

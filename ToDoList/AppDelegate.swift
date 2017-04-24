@@ -17,8 +17,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         let toDo = ToDo()
-        if let toDoListViewController = window?.rootViewController as? ToDoListViewController {
-            toDoListViewController.dataStorage = toDo
+        if (window?.rootViewController as? UITabBarController) != nil {
+            ToDoListViewController(storage: toDo)
         }
         
         return true

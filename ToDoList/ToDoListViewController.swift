@@ -12,7 +12,7 @@ import UIKit
 
 class ToDoListViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    var dataStorage: ToDo!
+    var dataStorage: ToDo?
     
     init(storage: ToDo) {
         dataStorage = storage
@@ -27,25 +27,31 @@ class ToDoListViewController: UIViewController, UITableViewDelegate, UITableView
 
 
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return dataStorage.toDoListArray.count
+        guard let amount = dataStorage?.count() else {
+            return 0
+        }
+        return amount
     }
     
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell(style: UITableViewCellStyle.default, reuseIdentifier: "cell")
-        cell.textLabel?.text = dataStorage.toDoListArray[indexPath.row].name
+        //ToDo: guard
+        cell.textLabel?.text = dataStorage?.toDoListArray[indexPath.row].name
         return cell
     }
     
     public func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == UITableViewCellEditingStyle.delete {
-            dataStorage.toDoListArray.remove(at: indexPath.row)
+            //ToDo: guard
+            dataStorage?.toDoListArray.remove(at: indexPath.row)
             myTableView.reloadData()
         }
     }
     
     override func viewDidAppear(_ animated: Bool) {
         myTableView.reloadData()
-        tabBarController?.tabBar.items?[0].badgeValue = "\(dataStorage.count)"
+        //ToDo: guard
+        tabBarController?.tabBar.items?[0].badgeValue = "\(dataStorage?.count())"
     }
 
     @IBOutlet weak var myTableView: UITableView!
